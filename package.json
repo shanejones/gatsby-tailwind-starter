@@ -1,7 +1,7 @@
 {
   "name": "gatsby-tailwind-starter",
   "private": true,
-  "description": "My Gatsby starter that comes with everything I tend to install on projects..",
+  "description": "My Gatsby starter that comes with everything I tend to install on projects.",
   "version": "1.0.0",
   "author": "Shane Jones <me@shanejones.co.uk>",
   "dependencies": {
