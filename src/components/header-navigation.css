@@ -36,7 +36,7 @@
   @apply overflow-hidden;
 }
 .navigation__with-child.navigation__with-child.parent-open svg {
-  @apply hidden;
+  @apply opacity-0;
 }
 .navigation__with-child ul:not(.child-visible) {
   @apply hidden;
