@@ -1,0 +1,60 @@
+.navigation[data-menu-visible="false"] {
+  @apply hidden;
+}
+.navigation[data-menu-visible="true"] {
+  @apply block;
+}
+@screen md {
+  .navigation {
+    background: transparent !important;
+  }
+  .navigation[data-menu-visible="false"] {
+    @apply block;
+  }
+}
+
+.navigation li {
+  @apply p-2;
+}
+@screen md {
+  .navigation li {
+    @apply px-4;
+  }
+}
+.navigation a {
+  @apply text-white text-xl uppercase font-extrabold;
+}
+
+@screen md {
+  .navigation a {
+    @apply text-sm font-extrabold text-white;
+  }
+}
+
+.navigation__with-child ul {
+  transition: height 0.75s ease;
+  @apply overflow-hidden;
+}
+.navigation__with-child.navigation__with-child.parent-open svg {
+  @apply hidden;
+}
+.navigation__with-child ul:not(.child-visible) {
+  @apply hidden;
+}
+.navigation__with-child.parent-open ul {
+  @apply block;
+}
+
+@screen md {
+  .navigation__with-child:hover ul {
+    @apply block absolute;
+  }
+
+  .navigation__with-child ul {
+    @apply bg-white p-4 rounded-sm;
+  }
+
+  .navigation__with-child ul a {
+    @apply text-black;
+  }
+}
